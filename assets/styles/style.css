@@ -1,0 +1,208 @@
+* {
+   box-sizing: border-box;
+}
+body{
+    font-family: 'Comic Neue', cursive;
+    background-image: url('https://i.pinimg.com/236x/91/88/f4/9188f4e63399c0a9c0c2fba215865c71.jpg');  
+}
+
+header{
+display: inline;
+
+}
+ .jumbotron {
+    font-family:'Shizuru', cursive;
+    font-size: 20px;
+    padding: 50px;
+    background-color: #262b36; 
+    text-align: center;
+    color: white;
+ }
+/*
+ menu drop
+ */
+ nav {
+   background-color:#383b43;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+ }
+ nav a{
+    color: white;
+ }
+ ul{
+    list-style: none;
+ }
+.menu-ctn > li  {
+   display: inline-block;
+   margin-right: 20px;
+   position: relative;
+   padding: 10px 15px;
+   color: white;
+}
+
+.menu-ctn li:hover{
+cursor: pointer;
+font-weight: bolder;
+background-color: #262b36;
+}
+
+#dropdown{
+   display: none;
+   position: absolute;
+   width: 100%;
+   background-color: #262b36;;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   text-align: center;
+   left: 0;
+   top: 100%;
+   
+}
+
+#dropdown.active {
+display:block ;
+
+}
+ 
+
+
+ /*Flexbox*/
+.container {
+    display: flex;
+
+    /* Properti lainnya */
+    width: 900px;
+    height: 310px;
+    background-color: transparent;
+    border: 1px solid #383b43;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: hsl(0, 0%, 100%) ;
+    position: relative;
+}
+
+.box {
+    flex-grow:  1;
+
+    /* properti lainnya */
+    background-color: transparent;
+    margin: 50px;
+    border: 0px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 230px;
+    position: relative;
+    z-index: -1;
+}
+.kata{
+   width: 160px;
+   height: 50px;
+    position: absolute;
+    bottom: 25px;
+    font-size: small;
+    color: white;
+    font-weight: bold 
+   
+}
+
+ h2{
+    
+    color: whitesmoke;
+    text-align: center;
+    
+ }
+
+ h3{
+    color: white;
+    text-align: center;
+    font: 3em ;
+ }
+ 
+ th{
+font-size: 0.8em;
+ }
+
+ p{
+   color: white;
+}
+
+/*artikel*/
+.card {
+   
+   border-radius: 5px;
+   padding: 30px;
+   margin-top: 30px;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float:right;
+   width: 75%;
+   padding-left: 20px;
+
+
+
+   
+}
+aside {
+   float: left;
+   width: 25%;
+  
+}
+
+/*modile device*/
+@media screen and (max-width: 915px) {
+   #content,
+   aside, footer {
+       width: 100%;
+       padding: 0;
+   }
+}
+/*konten aside*/
+.profile header {
+   text-align: center;
+}
+
+.featured-image {
+   width: 100%;
+   max-height: 160px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.profile img {
+   width: 160px;
+   
+}
+.card {
+   background-color: #383b43;
+   box-shadow: 0 4px 8px 0 #383b43;
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+table{
+   text-align: center;
+   color: white;
+}
+ 
+
+
+/*footer*/
+footer{
+  
+   padding: 20px;
+   color: white;
+    background-color:#383b43;
+   text-align:center;
+   font-weight: bold;
+}
